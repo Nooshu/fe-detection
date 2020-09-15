@@ -1,5 +1,5 @@
-# fe-detection
-Simple bash script to try to find what version of GOV.UK Frontend is being used on a service
+# GOV.UK Frontend Detection
+Simple bash script to try to find what version of GOV.UK Frontend is being used on a service. Point the script at a services CSS file to guess the version used.
 
 Example command:
 ```
