@@ -34,7 +34,7 @@ Gives the following output:
 ✓ 3.5.0 present
 ```
 
-So version `3.5.0' of GOV.UK Frontend is most likely being used on this service.
+So version `3.5.0` of GOV.UK Frontend is most likely being used on this service.
 
 ## Methodology
 The 'dist` version of the CSS it taken and differences between versions are identified, then used to pin down a particular version of GOV.UK Frontend being used. Use the following command to do this:
