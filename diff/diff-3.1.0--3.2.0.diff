@@ -1,0 +1,12 @@
+diff --git a/./css/govuk-frontend-3.1.0.css b/./css/govuk-frontend-3.2.0.css
+index c932409..40f340c 100644
+--- a/./css/govuk-frontend-3.1.0.css
++++ b/./css/govuk-frontend-3.2.0.css
+@@ -1640,7 +1640,6 @@
+     max-width: 100%;
+     margin-bottom: 10px;
+     padding: 0;
+-    overflow: hidden;
+     white-space: normal
+ }
+ 

@@ -1,0 +1,69 @@
+diff --git a/./css/govuk-frontend-3.5.0.css b/./css/govuk-frontend-3.6.0.css
+index 3d20f83..be5d8b1 100644
+--- a/./css/govuk-frontend-3.5.0.css
++++ b/./css/govuk-frontend-3.6.0.css
+@@ -3745,6 +3745,51 @@
+     background-color: #626a6e
+ }
+ 
++.govuk-tag--grey {
++    color: #454a4d;
++    background: #eff0f1
++}
++
++.govuk-tag--purple {
++    color: #3d2375;
++    background: #dbd5e9
++}
++
++.govuk-tag--turquoise {
++    color: #10403c;
++    background: #bfe3e0
++}
++
++.govuk-tag--blue {
++    color: #144e81;
++    background: #d2e2f1
++}
++
++.govuk-tag--yellow {
++    color: #594d00;
++    background: #fff7bf
++}
++
++.govuk-tag--orange {
++    color: #6e3619;
++    background: #fcd6c3
++}
++
++.govuk-tag--red {
++    color: #942514;
++    background: #f6d7d2
++}
++
++.govuk-tag--pink {
++    color: #80224d;
++    background: #f7d7e6
++}
++
++.govuk-tag--green {
++    color: #005a30;
++    background: #cce2d8
++}
++
+ .govuk-phase-banner {
+     padding-top: 10px;
+     padding-bottom: 10px;
+@@ -4727,6 +4772,12 @@
+     display: none!important
+ }
+ 
++@media print {
++    .govuk-\!-display-none-print {
++        display: none!important
++    }
++}
++
+ .govuk-\!-margin-0 {
+     margin: 0!important
+ }

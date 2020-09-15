@@ -1,0 +1,92 @@
+diff --git a/./css/govuk-frontend-3.3.0.css b/./css/govuk-frontend-3.4.0.css
+index 38960ec..0af0e9f 100644
+--- a/./css/govuk-frontend-3.3.0.css
++++ b/./css/govuk-frontend-3.4.0.css
+@@ -50,7 +50,7 @@
+ }
+ 
+ .govuk-link--muted:active,.govuk-link--muted:hover,.govuk-link--muted:link,.govuk-link--muted:visited {
+-    color: #6f777b
++    color: #626a6e
+ }
+ 
+ .govuk-link--muted:focus,.govuk-link--text-colour:active,.govuk-link--text-colour:focus,.govuk-link--text-colour:hover,.govuk-link--text-colour:link,.govuk-link--text-colour:visited {
+@@ -342,7 +342,7 @@
+     line-height: 1.11111;
+     display: block;
+     margin-bottom: 5px;
+-    color: #6f777b
++    color: #626a6e
+ }
+ 
+ @media print {
+@@ -376,7 +376,7 @@
+     line-height: 1.11111;
+     display: block;
+     margin-bottom: 5px;
+-    color: #6f777b
++    color: #626a6e
+ }
+ 
+ @media print {
+@@ -415,7 +415,7 @@
+     font-size: 1rem;
+     line-height: 1.25;
+     display: block;
+-    color: #6f777b
++    color: #626a6e
+ }
+ 
+ @media print {
+@@ -1197,9 +1197,7 @@
+     position: relative;
+     margin-top: 15px;
+     margin-bottom: 15px;
+-    padding-left: 14px;
+-    border-bottom: 1px solid #0b0c0c;
+-    text-decoration: none
++    padding-left: 14px
+ }
+ 
+ @media (min-width:40.0625em) {
+@@ -1236,7 +1234,12 @@
+     }
+ }
+ 
+-.govuk-back-link:focus {
++.govuk-back-link[href] {
++    border-bottom: 1px solid #0b0c0c;
++    text-decoration: none
++}
++
++.govuk-back-link[href]:focus {
+     border-bottom-color: rgba(0,0,0,0)
+ }
+ 
+@@ -1329,7 +1332,7 @@
+     transform: rotate(45deg);
+     border: solid;
+     border-width: 1px 1px 0 0;
+-    border-color: #6f777b
++    border-color: #626a6e
+ }
+ 
+ .govuk-breadcrumbs__list-item:first-child {
+@@ -1808,7 +1811,7 @@
+     line-height: 1.25;
+     display: block;
+     margin-bottom: 15px;
+-    color: #6f777b
++    color: #626a6e
+ }
+ 
+ @media print {
+@@ -3759,7 +3762,7 @@
+ }
+ 
+ .govuk-tag--inactive {
+-    background-color: #6f777b
++    background-color: #626a6e
+ }
+ 
+ .govuk-phase-banner {

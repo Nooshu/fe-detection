@@ -1,0 +1,34 @@
+diff --git a/./css/govuk-frontend-2.6.0.css b/./css/govuk-frontend-2.7.0.css
+index 1b281e2..be388c6 100644
+--- a/./css/govuk-frontend-2.6.0.css
++++ b/./css/govuk-frontend-2.7.0.css
+@@ -155,7 +155,11 @@
+ }
+ 
+ .govuk-template {
+-    background-color: #dee0e2
++    background-color: #dee0e2;
++    -webkit-text-size-adjust: 100%;
++    -moz-text-size-adjust: 100%;
++    -ms-text-size-adjust: 100%;
++    text-size-adjust: 100%
+ }
+ 
+ .govuk-template__body {
+@@ -2142,10 +2146,14 @@
+     }
+ }
+ 
++.govuk-summary-list__key,.govuk-summary-list__value {
++    word-break: break-word;
++    word-break: break-all
++}
++
+ .govuk-summary-list__key {
+     margin-bottom: 5px;
+-    font-weight: 700;
+-    word-break: break-word
++    font-weight: 700
+ }
+ 
+ @media (min-width:40.0625em) {

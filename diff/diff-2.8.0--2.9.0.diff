@@ -1,0 +1,39 @@
+diff --git a/./css/govuk-frontend-2.8.0.css b/./css/govuk-frontend-2.9.0.css
+index 055baec..405ef96 100644
+--- a/./css/govuk-frontend-2.8.0.css
++++ b/./css/govuk-frontend-2.9.0.css
+@@ -1,5 +1,3 @@
+-@charset "UTF-8";
+-
+ .govuk-link {
+     font-family: nta,Arial,sans-serif;
+     -webkit-font-smoothing: antialiased;
+@@ -873,15 +871,15 @@
+ }
+ 
+ .govuk-main-wrapper {
++    display: block;
+     padding-top: 20px;
+-    padding-bottom: 20px;
+-    display: block
++    padding-bottom: 20px
+ }
+ 
+ @media (min-width:40.0625em) {
+     .govuk-main-wrapper {
+-        padding-top: 30px;
+-        padding-bottom: 30px
++        padding-top: 40px;
++        padding-bottom: 40px
+     }
+ }
+ 
+@@ -3684,7 +3682,7 @@
+ }
+ 
+ .govuk-tabs__list-item:before {
+-    content: "— ";
++    content: "\2014 ";
+     margin-left: -25px;
+     padding-right: 5px
+ }

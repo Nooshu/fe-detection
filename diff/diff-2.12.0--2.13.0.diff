@@ -1,0 +1,45 @@
+diff --git a/./css/govuk-frontend-2.12.0.css b/./css/govuk-frontend-2.13.0.css
+index 4973ef0..d54d8d7 100644
+--- a/./css/govuk-frontend-2.12.0.css
++++ b/./css/govuk-frontend-2.13.0.css
+@@ -1436,8 +1436,7 @@
+ }
+ 
+ .govuk-button--disabled,.govuk-button[disabled=disabled],.govuk-button[disabled] {
+-    opacity: .5;
+-    background: #00823b
++    opacity: .5
+ }
+ 
+ .govuk-button--disabled:hover,.govuk-button[disabled=disabled]:hover,.govuk-button[disabled]:hover {
+@@ -1467,6 +1466,10 @@
+     background-color: #c8cacb
+ }
+ 
++.govuk-button--secondary:focus[disabled],.govuk-button--secondary:hover[disabled] {
++    background-color: #dee0e2
++}
++
+ .govuk-button--warning {
+     background-color: #b10e1e;
+     box-shadow: 0 2px 0 #47060c
+@@ -1480,6 +1483,10 @@
+     background-color: #8e0b18
+ }
+ 
++.govuk-button--warning:focus[disabled],.govuk-button--warning:hover[disabled] {
++    background-color: #b10e1e
++}
++
+ .govuk-button--start {
+     font-weight: 700;
+     font-size: 18px;
+@@ -3456,7 +3463,7 @@
+     }
+ }
+ 
+-.govuk-header__logotype-crown,.govuk-header__logotype-crown-fallback-image {
++.govuk-header__logotype-crown {
+     position: relative;
+     top: -4px
+ }
