@@ -1,6 +1,6 @@
 #!/usr/bin/env bats
 
-script_path="$BATS_TEST_DIRNAME/fe-test.sh"
+script_path="$BATS_TEST_DIRNAME/fe-test.sh -u "
 
 function url_for() {
   v="$1"

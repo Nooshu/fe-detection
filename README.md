@@ -1,15 +1,15 @@
 # GOV.UK Frontend Detection
-Simple bash script to try to find what version of GOV.UK Frontend is being used on a service. Point the script at a services CSS file to guess the version used.
+Bash script to try to find what version of GOV.UK Frontend is being used on a service. Point the script at a services CSS file to guess the version used.
 
 Example command:
 ```
-./fe-test.sh https://raw.githubusercontent.com/alphagov/govuk-frontend/v2.9.0/dist/govuk-frontend-2.9.0.min.css
+./fe-test.sh -u https://raw.githubusercontent.com/alphagov/govuk-frontend/v2.9.0/dist/govuk-frontend-2.9.0.min.css
 ```
 
 ## Use on a live services
 Running the following command:
 ```
-./fe-test.sh https://create-energy-label.service.gov.uk/assets/static/css/main.css
+./fe-test.sh -u https://create-energy-label.service.gov.uk/assets/static/css/main.css
 ```
 Gives the following output:
 
@@ -35,6 +35,13 @@ Gives the following output:
 ```
 
 So version `3.5.0` of GOV.UK Frontend is most likely being used on this service.
+
+## Use on a CSS file
+Some services restrict the downloading of assets via `curl`, so you can download via the browser then pass them into the script using the `-f` flag:
+
+```
+./fe-test.sh -f css-filename.css
+```
 
 ## Methodology
 The 'dist` version of the CSS it taken and differences between versions are identified, then used to pin down a particular version of GOV.UK Frontend being used. Use the following command to do this:

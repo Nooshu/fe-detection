@@ -1,12 +1,23 @@
 #!/bin/bash
 
-output=$(curl -silent "$1")
+while getopts 'u:f:' OPTION; do
+  case "$OPTION" in
+    u ) # process option u for passing in a URL
+      url="$OPTARG"
+      output=$(curl -silent "$url")
+      ;;
+    f ) # process option f for passing in a file
+      filename=$OPTARG
+      output=$(<$filename)
+      ;;
+    \? ) echo "Usage: cmd [-u] (URL) [-f] (File)"
+      ;;
+  esac
+done
 
 # grep -q: Quiet;  do  not  write  anything  to  standard   output.    Exit immediately  with  zero status if any match is found, even if an error was detected.  Also see the -s or --no-messages option.
 
 versions=()
-
-
 
 # 1.0.0 has '.govuk-tabs__list' CSS selector
 if grep -qF ".govuk-tabs__list" <<< "$output" ; then
