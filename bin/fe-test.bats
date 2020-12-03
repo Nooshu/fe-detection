@@ -212,3 +212,9 @@ function not_matches_versions() {
   [ "$status" -eq 0 ]
   matches_versions 3.7.0 3.8.0 3.9.0
 }
+
+@test "3.10.0" {
+  run $script_path "$(url_for 3.10.0)"
+  [ "$status" -eq 0 ]
+  matches_versions 3.8.0 3.9.0 3.10.0
+}

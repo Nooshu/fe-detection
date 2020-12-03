@@ -67,3 +67,17 @@ Depends on:
 - [cURL](https://curl.haxx.se/)
 - [cssbeautify-cli](https://www.npmjs.com/package/cssbeautify-cli)
 - [Bats](https://github.com/sstephenson/bats)
+
+# To add a new version of GOV.UK Frontend
+```
+# Download and beautify the css
+curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v[VERSION]/dist/govuk-frontend-[VERSION].min.css | cssbeautify-cli -s > ./css/govuk-frontend-[VERSION].css
+
+# generate the new diffs
+./generate-diffs.sh
+
+# Examine the new version diff looking for a unique change for this version
+# Add version + unique change to `fe-test.sh`
+# Add new test to `fe-test.bats` and run test
+bats ./bin/fe-test.bats
+```

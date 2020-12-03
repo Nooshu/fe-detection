@@ -172,9 +172,14 @@ if grep -qF "#505a5f" <<< "$output" ; then
   versions+=("✓ 3.8.0")
 fi
 
-# 3.9.0 has ''.govuk-input__prefix' CSS selector
+# 3.9.0 has '.govuk-input__prefix' CSS selector
 if grep -qF ".govuk-input__prefix" <<< "$output" ; then
   versions+=("✓ 3.9.0")
+fi
+
+# 3.10.0 has ''.govuk-notification-banner' CSS selector
+if grep -qF ".govuk-notification-banner" <<< "$output" ; then
+  versions+=("✓ 3.10.0")
 fi
 
 for version in "${versions[@]}"; do

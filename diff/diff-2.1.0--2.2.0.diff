@@ -1,0 +1,75 @@
+diff --git a/./css/govuk-frontend-2.1.0.css b/./css/govuk-frontend-2.2.0.css
+index d33173f..203085a 100644
+--- a/./css/govuk-frontend-2.1.0.css
++++ b/./css/govuk-frontend-2.2.0.css
+@@ -1722,6 +1722,33 @@
+     margin-bottom: 0
+ }
+ 
++.govuk-character-count {
++    margin-bottom: 20px
++}
++
++@media (min-width:40.0625em) {
++    .govuk-character-count {
++        margin-bottom: 30px
++    }
++}
++
++.govuk-character-count .govuk-form-group,.govuk-character-count .govuk-textarea {
++    margin-bottom: 5px
++}
++
++.govuk-character-count .govuk-textarea--error {
++    padding: 3px
++}
++
++.govuk-character-count__message {
++    margin-top: 0;
++    margin-bottom: 0
++}
++
++.govuk-character-count__message--disabled {
++    visibility: hidden
++}
++
+ .govuk-input {
+     font-family: nta,Arial,sans-serif;
+     -webkit-font-smoothing: antialiased;
+@@ -2457,7 +2484,9 @@
+     font-weight: 400;
+     font-size: 18px;
+     font-size: 1.125rem;
+-    line-height: 1.11111
++    line-height: 1.11111;
++    display: inline-table;
++    padding-right: 10px
+ }
+ 
+ @media print {
+@@ -3453,6 +3482,7 @@
+     font-size: 16px;
+     font-size: 1rem;
+     line-height: 1.25;
++    color: #0b0c0c;
+     width: 40px;
+     margin-bottom: 10px;
+     text-align: center
+@@ -3475,7 +3505,8 @@
+ @media print {
+     .govuk-radios__divider {
+         font-size: 14pt;
+-        line-height: 1.15
++        line-height: 1.15;
++        color: #000
+     }
+ }
+ 
+@@ -3509,6 +3540,7 @@
+     font-size: 1rem;
+     line-height: 1.25;
+     box-sizing: border-box;
++    max-width: 100%;
+     height: 40px;
+     padding: 5px;
+     border: 2px solid #0b0c0c
