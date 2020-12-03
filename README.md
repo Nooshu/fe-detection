@@ -3,13 +3,13 @@ Bash script to try to find what version of GOV.UK Frontend is being used on a se
 
 Example command:
 ```
-./fe-test.sh -u https://raw.githubusercontent.com/alphagov/govuk-frontend/v2.9.0/dist/govuk-frontend-2.9.0.min.css
+./bin/fe-test.sh -u https://raw.githubusercontent.com/alphagov/govuk-frontend/v2.9.0/dist/govuk-frontend-2.9.0.min.css
 ```
 
 ## Use on a live services
 Running the following command:
 ```
-./fe-test.sh -u https://create-energy-label.service.gov.uk/assets/static/css/main.css
+./bin/fe-test.sh -u https://create-energy-label.service.gov.uk/assets/static/css/main.css
 ```
 Gives the following output:
 
@@ -40,7 +40,7 @@ So version `3.5.0` of GOV.UK Frontend is most likely being used on this service.
 Some services restrict the downloading of assets via `curl`, so you can download via the browser then pass them into the script using the `-f` flag:
 
 ```
-./fe-test.sh -f css-filename.css
+./bin/fe-test.sh -f css-filename.css
 ```
 
 ## Methodology
