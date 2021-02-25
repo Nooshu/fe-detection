@@ -177,11 +177,17 @@ if grep -qF ".govuk-input__prefix" <<< "$output" ; then
   versions+=("✓ 3.9.0")
 fi
 
-# 3.10.0 has ''.govuk-notification-banner' CSS selector
+# 3.10.0 has '.govuk-notification-banner' CSS selector
 if grep -qF ".govuk-notification-banner" <<< "$output" ; then
   versions+=("✓ 3.10.0")
+fi
+
+# 3.11.0 has '.govuk-cookie-banner' CSS selector
+if grep -qF ".govuk-cookie-banner" <<< "$output" ; then
+  versions+=("✓ 3.11.0")
 fi
 
 for version in "${versions[@]}"; do
   echo "$version present"
 done
+
