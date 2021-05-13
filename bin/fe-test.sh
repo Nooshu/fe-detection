@@ -187,6 +187,11 @@ if grep -qF ".govuk-cookie-banner" <<< "$output" ; then
   versions+=("✓ 3.11.0")
 fi
 
+# 3.12.0 has '.govuk-link--no-underline' CSS selector
+if grep -qF ".govuk-link--no-underline" <<< "$output" ; then
+  versions+=("✓ 3.12.0")
+fi
+
 for version in "${versions[@]}"; do
   echo "$version present"
 done
