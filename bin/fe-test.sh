@@ -192,7 +192,11 @@ if grep -qF ".govuk-link--no-underline" <<< "$output" ; then
   versions+=("✓ 3.12.0")
 fi
 
-for version in "${versions[@]}"; do
-  echo "$version present"
-done
-
+if [ -z "$versions" ]
+then
+  echo "GOV.UK Frontend CSS not found in this CSS file."
+else
+  for version in "${versions[@]}"; do
+    echo "$version present"
+  done
+fi

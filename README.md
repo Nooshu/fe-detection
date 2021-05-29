@@ -30,11 +30,15 @@ Gives the following output:
 ✓ 3.0.0 present
 ✓ 3.1.0 present
 ✓ 3.3.0 present
-✓ 3.4.0 present
-✓ 3.5.0 present
+✓ 3.6.0 present
+✓ 3.7.0 present
+✓ 3.8.0 present
+✓ 3.9.0 present
+✓ 3.10.0 present
+✓ 3.11.0 present
 ```
 
-So version `3.5.0` of GOV.UK Frontend is most likely being used on this service.
+So version `3.11.0` of GOV.UK Frontend is most likely being used on this service.
 
 ## Use on a CSS file
 Some services restrict the downloading of assets via `curl`, so you can download via the browser then pass them into the script using the `-f` flag:
