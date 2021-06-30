@@ -192,6 +192,11 @@ if grep -qF ".govuk-link--no-underline" <<< "$output" ; then
   versions+=("✓ 3.12.0")
 fi
 
+# 3.13.0 has '.govuk-checkboxes__divider' CSS selector
+if grep -qF ".govuk-checkboxes__divider" <<< "$output" ; then
+  versions+=("✓ 3.13.0")
+fi
+
 if [ -z "$versions" ]
 then
   echo "GOV.UK Frontend CSS not found in this CSS file."
