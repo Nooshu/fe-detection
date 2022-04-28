@@ -1,0 +1,124 @@
+diff --git a/./css/govuk-frontend-4.0.0.css b/./css/govuk-frontend-4.0.1.css
+index f572f65..b977e96 100644
+--- a/./css/govuk-frontend-4.0.0.css
++++ b/./css/govuk-frontend-4.0.1.css
+@@ -1076,36 +1076,27 @@
+ }
+ 
+ .govuk-accordion__section-button {
+-    color: #0b0c0c;
+-    display: block;
+-    margin-bottom: 0;
+-    padding-top: 15px
+-}
+-
+-@media print {
+-    .govuk-accordion__section-button {
+-        color: #000
+-    }
+-}
+-
+-.govuk-accordion__section-heading-text {
+     font-family: GDS Transport,arial,sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     font-weight: 700;
+     font-size: 18px;
+     font-size: 1.125rem;
+-    line-height: 1.11111
++    line-height: 1.11111;
++    color: #0b0c0c;
++    display: block;
++    margin-bottom: 0;
++    padding-top: 15px
+ }
+ 
+ @media print {
+-    .govuk-accordion__section-heading-text {
++    .govuk-accordion__section-button {
+         font-family: sans-serif
+     }
+ }
+ 
+ @media (min-width:40.0625em) {
+-    .govuk-accordion__section-heading-text {
++    .govuk-accordion__section-button {
+         font-size: 24px;
+         font-size: 1.5rem;
+         line-height: 1.25
+@@ -1113,9 +1104,10 @@
+ }
+ 
+ @media print {
+-    .govuk-accordion__section-heading-text {
++    .govuk-accordion__section-button {
+         font-size: 18pt;
+-        line-height: 1.15
++        line-height: 1.15;
++        color: #000
+     }
+ }
+ 
+@@ -1362,22 +1354,13 @@
+ }
+ 
+ .js-enabled .govuk-accordion__section-toggle {
+-    font-family: GDS Transport,arial,sans-serif;
+-    -webkit-font-smoothing: antialiased;
+-    -moz-osx-font-smoothing: grayscale;
+-    font-weight: 400;
+     font-size: 16px;
+     font-size: 1rem;
+     line-height: 1.25;
++    font-weight: 400;
+     color: #1d70b8
+ }
+ 
+-@media print {
+-    .js-enabled .govuk-accordion__section-toggle {
+-        font-family: sans-serif
+-    }
+-}
+-
+ @media (min-width:40.0625em) {
+     .js-enabled .govuk-accordion__section-toggle {
+         font-size: 19px;
+@@ -2737,9 +2720,12 @@
+     }
+ }
+ 
+-.govuk-summary-list__row--no-actions:after {
+-    content: "";
+-    display: table-cell
++@media (min-width:40.0625em) {
++    .govuk-summary-list__row--no-actions:after {
++        content: "";
++        display: table-cell;
++        width: 20%
++    }
+ }
+ 
+ .govuk-summary-list__actions,.govuk-summary-list__key,.govuk-summary-list__value {
+@@ -5020,11 +5006,6 @@
+     }
+ }
+ 
+-.govuk-radios--inline.govuk-radios--conditional .govuk-radios__item {
+-    margin-right: 0;
+-    float: none
+-}
+-
+ .govuk-radios__divider {
+     font-family: GDS Transport,arial,sans-serif;
+     -webkit-font-smoothing: antialiased;
+@@ -5171,7 +5152,9 @@
+     height: 40px;
+     height: 2.5rem;
+     padding: 5px;
+-    border: 2px solid #0b0c0c
++    border: 2px solid #0b0c0c;
++    color: #0b0c0c;
++    background-color: #fff
+ }
+ 
+ @media print {

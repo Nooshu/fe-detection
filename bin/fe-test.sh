@@ -197,6 +197,18 @@ if grep -qF ".govuk-checkboxes__divider" <<< "$output" ; then
   versions+=("✓ 3.13.0")
 fi
 
+# 4.0.0 has '.govuk-template' CSS selector
+if grep -qF ".govuk-template" <<< "$output" ; then
+  versions+=("✓ 4.0.0")
+fi
+
+# 4.0.1 has '.govuk-accordion__section-button' CSS selector
+if grep -qF ".govuk-accordion__section-button" <<< "$output" ; then
+  versions+=("✓ 4.0.1")
+fi
+
+
+
 if [ -z "$versions" ]
 then
   echo "GOV.UK Frontend CSS not found in this CSS file."
