@@ -248,3 +248,15 @@ function not_matches_versions() {
   [ "$status" -eq 0 ]
   matches_versions 3.13.0 4.0.0 4.0.1
 }
+
+@test "4.1.0" {
+  run $script_path "$(url_for 4.1.0)"
+  [ "$status" -eq 0 ]
+  matches_versions 3.13.0 4.0.0 4.1.0
+}
+
+@test "4.2.0" {
+  run $script_path "$(url_for 4.2.0)"
+  [ "$status" -eq 0 ]
+  matches_versions 4.0.1 4.1.0 4.2.0
+}

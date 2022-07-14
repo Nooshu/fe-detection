@@ -202,9 +202,21 @@ if grep -qF ".govuk-template" <<< "$output" ; then
   versions+=("✓ 4.0.0")
 fi
 
-# 4.0.1 has '.govuk-accordion__section-button' CSS selector
-if grep -qF ".govuk-accordion__section-button" <<< "$output" ; then
+# 4.0.1 has '.govuk-header__link--homepage' CSS selector
+if grep -qF ".govuk-header__link--homepage" <<< "$output" ; then
   versions+=("✓ 4.0.1")
+fi
+
+
+# 4.1.0 has '.govuk-radios__input:disabled~.govuk-hint' CSS selector
+if grep -qF ".govuk-radios__input:disabled~.govuk-hint" <<< "$output" ; then
+  versions+=("✓ 4.1.0")
+fi
+
+
+# 4.2.0 has '.govuk-header__service-name' CSS selector
+if grep -qF ".govuk-header__service-name" <<< "$output" ; then
+  versions+=("✓ 4.2.0")
 fi
 
 
