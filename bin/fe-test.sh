@@ -219,6 +219,11 @@ if grep -qF ".govuk-header__service-name" <<< "$output" ; then
   versions+=("✓ 4.2.0")
 fi
 
+# 4.3.0 has '.govuk-\!-margin-static-0' CSS selector
+if grep -qF ".govuk-\!-margin-static-0" <<< "$output" ; then
+  versions+=("✓ 4.3.0")
+fi
+
 
 
 if [ -z "$versions" ]

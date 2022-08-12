@@ -3,7 +3,7 @@ Bash script to try to find what version of GOV.UK Frontend is being used on a se
 
 Example command:
 ```
-./bin/fe-test.sh -u https://raw.githubusercontent.com/alphagov/govuk-frontend/v2.9.0/dist/govuk-frontend-2.9.0.min.css
+./bin/fe-test.sh -u https://raw.githubusercontent.com/alphagov/govuk-frontend/v4.3.0/dist/govuk-frontend-4.3.0.min.css
 ```
 
 ## Use on a live services
@@ -51,7 +51,7 @@ Some services restrict the downloading of assets via `curl`, so you can download
 The 'dist` version of the CSS it taken and differences between versions are identified, then used to pin down a particular version of GOV.UK Frontend being used. Use the following command to do this:
 
 ```
-curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v2.9.0/dist/govuk-frontend-2.9.0.min.css | cssbeautify-cli -s > ./css/govuk-frontend-2.9.0.css
+curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v4.3.0/dist/govuk-frontend-4.3.0.min.css | cssbeautify-cli -s > ./css/govuk-frontend-4.3.0.css
 ```
 
 ## Generating diffs
@@ -75,7 +75,7 @@ Depends on:
 # To add a new version of GOV.UK Frontend
 ```
 # Download and beautify the css
-# e.g. curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v3.11.0/dist/govuk-frontend-3.11.0.min.css | cssbeautify-cli -s > ./css/govuk-frontend-3.11.0.css
+# e.g. curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v4..0/dist/govuk-frontend-4.3.0.min.css | cssbeautify-cli -s > ./css/govuk-frontend-4.3.0.css
 curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v[VERSION]/dist/govuk-frontend-[VERSION].min.css | cssbeautify-cli -s > ./css/govuk-frontend-[VERSION].css
 
 # generate the new diffs
