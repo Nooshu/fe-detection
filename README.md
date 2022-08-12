@@ -75,7 +75,7 @@ Depends on:
 # To add a new version of GOV.UK Frontend
 ```
 # Download and beautify the css
-# e.g. curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v4..0/dist/govuk-frontend-4.3.0.min.css | cssbeautify-cli -s > ./css/govuk-frontend-4.3.0.css
+# e.g. curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v4.3.0/dist/govuk-frontend-4.3.0.min.css | cssbeautify-cli -s > ./css/govuk-frontend-4.3.0.css
 curl -s https://raw.githubusercontent.com/alphagov/govuk-frontend/v[VERSION]/dist/govuk-frontend-[VERSION].min.css | cssbeautify-cli -s > ./css/govuk-frontend-[VERSION].css
 
 # generate the new diffs
