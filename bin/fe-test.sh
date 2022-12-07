@@ -224,6 +224,10 @@ if grep -qF ".govuk-\!-margin-static-0" <<< "$output" ; then
   versions+=("✓ 4.3.0")
 fi
 
+# 4.4.0 has '.govuk-checkboxes__label:after' CSS selector
+if grep -qF ".govuk-checkboxes__label:after" <<< "$output" ; then
+  versions+=("✓ 4.4.0")
+fi
 
 
 if [ -z "$versions" ]
