@@ -1,6 +1,6 @@
 # 🚨🚨Deprecated🚨🚨
 
-This repo has now been deprecated since the Design System team has now added the `:root {--govuk-frontend-version: "[version number]";}` into their CSS files. 
+This repo has now been deprecated since the Design System team has now added the `:root {--govuk-frontend-version: "[version number]";}` into their CSS files. See [issue 2](https://github.com/Nooshu/fe-detection/issues/2) for more information!
 
 # GOV.UK Frontend Detection
 Bash script to try to find what version of GOV.UK Frontend is being used on a service. Point the script at a services CSS file to guess the version used.
